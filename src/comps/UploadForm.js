@@ -7,7 +7,7 @@ function UploadForm() {
   const types = ["image/png", "image/jpeg"];
 
   const changeHanlder = (e) => {
-    // store the selected file
+    // store the selected file from first index
     let selected = e.target.files[0];
     // make sure the selected file type is an image
     if (selected && types.includes(selected.type)) {
